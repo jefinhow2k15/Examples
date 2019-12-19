@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>País Origem</title>
+</head>
+<body>
+    <h1>Informe seu País de Origem</h1>
+    Nome do País <input type="text" name="txtnome" id="txtnome">
+    <input type="button" value="Verificar" onclick="confirma()">
+    <div id="res"></div>
+
+    <script>
+        function confirma(){
+            var nome = window.document.getElementById('txtnome').value
+            var res = window.document.getElementById('res')    
+            
+            if(nome == "brasil"){
+                res.innerHTML = `<p>Você é <strong>Brasileiro</strong>!</p>`
+            }
+            else{
+                res.innerHTML = `<p>Você é Estrangeiro<p>`
+            }
+        }
+    </script>
+
+</body>
+</html>
